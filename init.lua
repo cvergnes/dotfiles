@@ -27,7 +27,6 @@ vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.showbreak = '↪\\'
 vim.opt.textwidth = 80
-vim.opt.colorcolumn = '80'
 
 -- Recherche incrémentale et ignore la casse
 vim.opt.incsearch = true
@@ -36,4 +35,3 @@ vim.opt.smartcase = true
 
 -- Défilement fluide
 vim.opt.scrolloff = 5
-
