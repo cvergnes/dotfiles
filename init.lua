@@ -1,7 +1,7 @@
 -- =============================================
 -- Configuration de base pour Neovim (Markdown + raccourcis Vim)
 -- =============================================
-
+  
 -- Activer la coloration syntaxique
 vim.cmd('syntax on')
 
@@ -38,3 +38,20 @@ vim.opt.smartcase = true
 
 -- Défilement fluide
 vim.opt.scrolloff = 5
+
+local timer = vim.uv.new_timer()
+
+local function auto_save()
+  timer:stop()
+  timer:start(1000, 0, vim.schedule_wrap(function()
+    if vim.bo.modified and vim.bo.buftype == "" and vim.fn.expand("%") ~= "" then
+      vim.cmd("silent! write")
+    end
+  end))
+end
+
+vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave" }, {
+  pattern = "*",
+  callback = auto_save,
+  desc = "Auto-save with debounce (1s)",
+})
