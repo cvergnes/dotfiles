@@ -6,7 +6,10 @@
 vim.cmd('syntax on')
 
 -- Thème clair (ex: 'morning', 'desert', 'zellner')
-vim.cmd('colorscheme desert')
+vim.cmd('colorscheme default')
+
+-- copy and paste from the system clipboard 
+vim.opt.clipboard = "unnamedplus"
 
 -- Numéros de ligne et ligne courante
 vim.opt.number = true

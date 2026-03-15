@@ -33,3 +33,5 @@ set ignorecase
 set smartcase
 
 set wrap
+
+set clipboard=unnamedplus
