@@ -154,37 +154,36 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     cmd-alt-w = 'layout tiles horizontal vertical'
-    cmd-alt-x = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    cmd-alt-h = 'focus left'
-    cmd-alt-j = 'focus down'
-    cmd-alt-k = 'focus up'
-    cmd-alt-l = 'focus right'
+    #cmd-alt-h = 'focus left'
+    #cmd-alt-j = 'focus down'
+    #cmd-alt-k = 'focus up'
+    #cmd-alt-l = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    cmd-alt-shift-h = 'move left'
-    cmd-alt-shift-j = 'move down'
-    cmd-alt-shift-k = 'move up'
-    cmd-alt-shift-l = 'move right'
+    #cmd-alt-shift-h = 'move left'
+    #cmd-alt-shift-j = 'move down'
+    #cmd-alt-shift-k = 'move up'
+    #cmd-alt-shift-l = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-    cmd-alt-q = 'resize smart -50'
-    cmd-alt-s = 'resize smart +50'
+    alt-q = 'resize smart -50'
+    alt-s = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    cmd-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
-    cmd-alt-e = 'workspace E'
-    cmd-alt-r = 'workspace R'
-    cmd-alt-t = 'workspace T'
-    cmd-alt-z = 'workspace Z'
+    alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+    alt-e = 'workspace E'
+    alt-r = 'workspace R'
+    alt-t = 'workspace T'
+    alt-z = 'workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    cmd-alt-shift-a = 'move-node-to-workspace A'
-    cmd-alt-shift-e = 'move-node-to-workspace E'
-    cmd-alt-shift-r = 'move-node-to-workspace R'
-    cmd-alt-shift-t = 'move-node-to-workspace T'
-    cmd-alt-shift-z = 'move-node-to-workspace Z'
+    alt-shift-a = 'move-node-to-workspace A'
+    alt-shift-e = 'move-node-to-workspace E'
+    alt-shift-r = 'move-node-to-workspace R'
+    alt-shift-t = 'move-node-to-workspace T'
+    alt-shift-z = 'move-node-to-workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     cmd-alt-tab = 'workspace-back-and-forth'
@@ -192,7 +191,7 @@ on-mode-changed = []
     cmd-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    cmd-alt-shift-s = 'mode service'
+    #cmd-alt-shift-s = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
